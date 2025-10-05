@@ -29,6 +29,7 @@
 
 body{
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
  
 }
 
@@ -165,4 +166,14 @@ ul li a{
     padding: 24px 0;
     text-align:center;
     font-size: 14px;
+  }
+
+  /*media query*/
+  @media(min-width:700px){
+    :root{
+      --bg-url: url(./assests/bg-desktop.jpg);
+    }
+    .light{
+      --bg-url: url(./assests/bg-desktop-light.jpg);
+    }
   }
